@@ -1,13 +1,40 @@
-const header = document.createElement("div");
-header.innerHTML = "<h2>KK</h2>"
-header.id = "header"
+// Manipulate the HTML DOM using React
 
-const content = document.createElement("div");
-content.innerText = "Hello Mike";
-content.id = "content"
+// Create nested React Elements
+const header = React.createElement(
+    "h1",
+    {
+      id: "title",
+      style: {
+        
+      }
+    },
+    "KKR"
+  );
 
-const footer = document.createElement("div");
-footer.innerHTML = "<h4>Thank you</h4>"
-footer.id = "footer"
+  const content = React.createElement(
+    "p",
+    {
+      id: "content",
+    },
+    "Hi Mike!"
+  );
 
-document.body.append(header,content,footer);
+  const footer = React.createElement(
+    "h4",{},
+    "Thank you"
+  );
+  
+  const container = React.createElement(
+    "div",
+    {
+      id: "container",
+    },
+    [header, content, footer]
+  );
+  
+  // create root using createRoot
+  const root = ReactDOM.createRoot(document.getElementById("root"));
+
+  // passing react element inside root
+  root.render(container);
