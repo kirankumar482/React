@@ -1,0 +1,28 @@
+Task 1: Static Page using HTML & CSS
+
+- Host Web page using local server with live server extension
+- Emmet in Visual Studio Code to create elements faster
+- Linking external Stylesheet 
+
+Task 2: Creating Dynamic Webpage using JS DOM
+
+- JS DOM Methods like createElement() , append(), appendChilde(),..
+- When and how to load script files for better performance ?
+
+Task 3: Creating a React app by adding Library for our Project
+
+- Adding React Library to the project using CDN Links. We can access React and ReactDOM objects. (This creates an empty react project)
+- When to use React & ReactDOM objects?
+- Create root and render the elements using react objects (React.createElement)
+
+
+Git Things
+
+Uncommit Last commit in Git : 
+- To undo the act of committing but keep your changes and staging intact, use git reset --soft HEAD
+- To undo the act of committing and also unstage your changes but keep your files intact, use git reset HEAD.
+- To undo everything, including discarding your changes and resetting your files to the previous commit, use git reset --hard HEAD. 
+- To undo a commit that you have already pushed to a remote branch, use git revert <commit_hash> --no-edit.
+
+Delete Specific commit:
+
